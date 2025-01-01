@@ -482,7 +482,7 @@ const AccountInfo = () => {
   return (
     <View style={styles.mainContainer}>
       <View style={styles.contentContainer}>
-        <Text style={styles.heading}>Selected Files</Text>
+        <Text style={styles.heading}>Selected Images and Pdf</Text>
         <FlatList
           data={files}
           renderItem={renderFile}
