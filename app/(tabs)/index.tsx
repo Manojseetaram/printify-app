@@ -10,10 +10,9 @@ const Likes = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      {/* Slider Section */}
+      
       <Slider />
 
-      {/* Button Section */}
       <View style={styles.centerContent}>
         <TouchableOpacity
           style={styles.button}
@@ -23,7 +22,7 @@ const Likes = () => {
         </TouchableOpacity>
       </View>
 
-      {/* Bottom Sheet */}
+     
       {pitcherOpen && (
         <View style={styles.overlay}>
           <DownloadPitcher onClose={() => setPitcherOpen(false)} />

@@ -103,7 +103,7 @@ const AccountInfo = () => {
     }
 
     router.push({
-      pathname: "/option",
+      pathname: "/(nobottombar)/option",
       params: {
         selectedFiles: JSON.stringify({
           images: imageFiles,

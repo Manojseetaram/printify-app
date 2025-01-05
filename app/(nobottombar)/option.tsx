@@ -89,11 +89,11 @@ const Option = () => {
               setPrintOptions(prev => ({ ...prev, copies }));
             }}
             keyboardType="number-pad"
-            maxLength={2}
+            maxLength={3}
           />
         </View>
 
-        {/* Selected Files Summary */}
+     
         <View style={styles.summary}>
           <Text style={styles.summaryText}>Selected Files:</Text>
           <Text>Images: {selectedFiles?.images.length || 0}</Text>

@@ -14,7 +14,7 @@ export default function Layout() {
                     headerShown: true,
                     headerTitle: ""
                 }} />
-                <Stack.Screen name="(tabs)/option" options={{
+                <Stack.Screen name="(nobottombar)/option" options={{
                     headerShown: true,
                     headerTitle: "Print Options"
                 }} />
