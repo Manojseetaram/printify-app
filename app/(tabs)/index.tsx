@@ -1,5 +1,3 @@
-
-
 import React, { useState } from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -29,7 +27,7 @@ const Likes = () => {
           <DownloadPitcher onClose={() => setPitcherOpen(false)} />
         </View>
       )}
-      <Stack.Screen name="login"></Stack.Screen>
+      {/* <Stack.Screen name="_login"></Stack.Screen> */}
     </SafeAreaView>
   );
 };

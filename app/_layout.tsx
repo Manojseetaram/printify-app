@@ -5,7 +5,7 @@ export default function Layout() {
     return (
         <GestureHandlerRootView style={{ flex: 1 }}>
             <Stack screenOptions={{ headerShown: false }}>
-                <Stack.Screen name="login" />
+                <Stack.Screen name="(tabs)" />
                 <Stack.Screen name="index" />
                 <Stack.Screen name="(nobottombar)/PDFViewer" options={{
                     headerShown: true,
@@ -19,6 +19,11 @@ export default function Layout() {
                     headerShown: true,
                     headerTitle: "Print Options"
                 }} />
+                <Stack.Screen name="(nobottombar)/signin" options={{
+                    headerShown: false,
+                    headerTitle: '',
+                    headerTintColor:'yellow'
+                }}/>
             </Stack>
         </GestureHandlerRootView>
     );
