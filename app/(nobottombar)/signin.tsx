@@ -4,6 +4,7 @@ import { View, StyleSheet, Text, TextInput, TouchableOpacity } from "react-nativ
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 import { LinearGradient } from "expo-linear-gradient";
+import { Link, router } from "expo-router";
 export default function Signin() {
     return (
         <SafeAreaProvider>
@@ -88,14 +89,19 @@ export default function Signin() {
                         start={{ x: 0, y: 1 }}
                         end={{ x: 1, y: 1 }}
                     style={styles.centerbutton}>
-                <TouchableOpacity style={styles.button}>
+                        <TouchableOpacity style={styles.button}
+                        onPress={()=>router.push("/")}>
                             <Text style={{ alignItems:'center',color:'white',textAlign:'center',marginTop:10,fontWeight:'bold',fontSize:14,letterSpacing:2}}>Register</Text>
                  </TouchableOpacity>
                </LinearGradient>
                 </View>
+                <View>
+                    <Text>By registering. you are agreeing to our 
+                   Terms of use and Privacy Policy.</Text>
+                </View>
                 <View style={styles.login}>
                     <Text style={{color:'white'}}>Already have an account?</Text>
-                    <Text style={{color:'white', fontSize:14, fontWeight:'bold'}}>LOGIN</Text>
+                    <Link href="/login" style={{color:'white', fontSize:14, fontWeight:'bold',textAlign:"center",textDecorationLine:'underline'}}>LOGIN</Link>
                 </View>
             </SafeAreaView>
         </SafeAreaProvider>
@@ -166,6 +172,10 @@ const styles = StyleSheet.create({
      
     },
     login: {
-      flex:1
+      
+        flexDirection: 'row',
+        margin: 10,
+        justifyContent: 'space-evenly',
+       
     } 
 });
